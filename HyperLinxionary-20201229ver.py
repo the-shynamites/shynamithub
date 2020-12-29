@@ -13,16 +13,6 @@ sheet0 = book0['Linxionary']
 
 #【例1】辞書サイトA(URL→https://仮frjp.jpnn)で検索した場合。
 
-#sheet0['C2'] = '=HYPERLINK(TEXTJOIN("",TRUE,"https://frjp.jpnn/",B2),B2)'
-
-#OFFSET(INDIRECT(ADDRESS(ROW(), COLUMN())), 0, -1)
-#※１列前の同列のセルの値を参照
-
-
-
-#OFFSET( INDIRECT( ADDRESS( ROW(), COLUMN() ) ), -1, 0 )
-#※１行前の同列のセルの値を参照
-
 cellsC = sheet0['C2':'C30']
 for row2 in cellsC:
     for cell2 in row2:
