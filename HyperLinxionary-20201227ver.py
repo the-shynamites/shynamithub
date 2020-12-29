@@ -11,6 +11,8 @@ book0 = openpyxl.load_workbook('HyperLinxionary0.xlsx')
 #シート「Linxionary」を指定する
 sheet0 = book0['Linxionary']
 
+#【追記2021229】下記で生成されたURLが失敗。当方の意図と異なる。
+
 #【例1】辞書サイトA(URL→https://仮frjp.jpnn)で検索した場合。
 
 cellsC = sheet0['C2':'C30']
