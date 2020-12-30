@@ -21,7 +21,7 @@ SHEET1 = input()
 #シート(例:「fnxiontest」)を指定する
 sheet1 = book1[SHEET1]
 
-#数式の入ったセルの範囲をR1C1表記で指定する。→各セルの冒頭の一文字だけを除く(数式なので冒頭のイコールを除いて、計算処理を無効化する)。
+#数式の入ったセルの範囲をR1C1表記で指定する。→各セルの冒頭の一文字を別の文字に替える(数式なので冒頭のイコールを除いて、計算処理を無効化する)。
 
 print("PLZ choose min-Row (in R1C1 style), and press Enter-key. e.g. 1.")
 fromminRow = int(input())
