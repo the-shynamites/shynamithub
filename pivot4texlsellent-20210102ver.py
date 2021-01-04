@@ -1,5 +1,5 @@
 #pivot4texlsellent-20210102ver.py 
-#20201231-20210102, DRAFT?
+#DRAFT of PivoTexlsellent, 20201231-20210102.
 
 # coding:utf-8
 #pip3 install xlrd==1.2.0
