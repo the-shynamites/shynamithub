@@ -38,14 +38,14 @@ piv6= df1.pivot_table(index=['cc','項番'], values=['dd','textjoin','viva'],agg
 #既存のExcelファイル「ピボテクセレントSurfaces.xlsx」に新たなシートとして追加し、処理結果を追記する。
 
 
-with pd.ExcelWriter('ピボテクセレントSurfaces.xlsx') as writer:
-    writer.book = openpyxl.load_workbook('ピボテクセレントSurfaces.xlsx')
+with pd.ExcelWriter('ピボテクセレントSurfaces.xlsx', mode = 'a') as writer: # 追記モード20210111
+    #writer.book = openpyxl.load_workbook('ピボテクセレントSurfaces.xlsx') #←これが無くても動く20210111
     piv1.to_excel(writer, sheet_name='Surface1')
     piv2.to_excel(writer, sheet_name='Surface2')
     piv3.to_excel(writer, sheet_name='Surface3')
 
-with pd.ExcelWriter('ピボテクセレントLines.xlsx') as writer:
-    writer.book = openpyxl.load_workbook('ピボテクセレントLines.xlsx')
+with pd.ExcelWriter('ピボテクセレントLines.xlsx', mode = 'a') as writer: # 追記モード20210111
+    #writer.book = openpyxl.load_workbook('ピボテクセレントLines.xlsx') #←これが無くても動く20210111
     piv4.to_excel(writer, sheet_name='LineAlpha')
     piv5.to_excel(writer, sheet_name='LineBeta')
     piv6.to_excel(writer, sheet_name='LineGamma')
